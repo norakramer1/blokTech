@@ -1,0 +1,5 @@
+#Mac OS files
+.DS_store
+
+#dependencies
+/node_modules
