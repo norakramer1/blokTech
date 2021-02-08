@@ -1,0 +1,22 @@
+{
+  "name": "bloktech",
+  "version": "1.0.0",
+  "description": "blokTech 2021 matching applicatie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Hello World!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norakramer1/blokTech.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/norakramer1/blokTech/issues"
+  },
+  "homepage": "https://github.com/norakramer1/blokTech#readme",
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
