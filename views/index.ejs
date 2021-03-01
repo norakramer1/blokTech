@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
     <title>example</title>
-    <link rel="style.css" href="static/pu/styles/style.css">
+    <link rel="stylesheet" href="./static/public/styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
 
   </head>
   <body>
 
-<% const naam = 'Nora' %>
+     <%- include ("partials/nav"); %>
 
   <h1>Next Read</h1>
-  <p>Welkom, <%= naam %> bij NextRead! Ontmoet mensen die van dezelfde boeken houden of juist van een ander genre.</p>
+  <p>Welkom, bij NextRead! Ontmoet mensen die van dezelfde boeken houden of juist van een ander genre.</p>
+
+
+<footer> <%- include ("partials/footer"); %></footer>
 
   </body>
 </html>

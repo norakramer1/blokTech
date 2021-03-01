@@ -5,6 +5,7 @@ const port = 3000;
 const path = require('path');
 
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, './views'));
 
 app.use('/static', express.static(path.join(__dirname, 'static')))
 
@@ -29,5 +30,5 @@ app.get("*", (req, res) => {
 
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${3000}!`)
+  console.log(`Example app listening on port ${port}!`)
 });
