@@ -13,7 +13,15 @@ h1 {
   padding-left: 5%;
 }
 
-p {
+h2 {
+  font-family: 'Antic Didone', serif;
+  font-weight: lighter;
+  font-size: 150%;
+  padding-left: 5%;
+}
+
+
+p, a {
   font-family: sans-serif;
   padding-left: 5%;
   padding-right: 55%;
@@ -22,8 +30,9 @@ p {
 
 }
 
+
 nav {
-  border-bottom: 2px solid #FCF9EF;
+  border-bottom: 1px solid #FCF9EF;
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
@@ -44,6 +53,7 @@ nav ul li {
 
 nav ul li a {
   position: relative;
+  background-color: transparent;
   color: #FCF9EF;
   text-decoration: none;
 }
@@ -60,7 +70,7 @@ height: auto;
 nav ul li a::before {
   content: "";
  position: absolute;
- width: 100%;
+ width: 80%;
  height: 2px;
  bottom: 0;
  left: 0;
@@ -75,7 +85,53 @@ nav ul li a:hover::before {
   transform: scaleX(1);
 }
 
-  body a:nth-of-type(5) {
-  background-color: #FCF9EF;
+body {
+  margin-bottom: 100%;
+}
+
+
+body a.maakprofiel {
   color: #3A5743;
+
+  padding: 1% 2% 1% 2%;
+  margin: 30% 0 0 50%;
+
+}
+
+nav a {
+  background-color: transparent;
+}
+
+div.profielen {
+  padding: 0;
+  background-color: #3A5743;
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  list-style: none;
+}
+
+div.profielen ul {
+    list-style: none;
+}
+
+div.profielen ul li{
+  display: flex;
+  justify-content: center;
+  max-width: 25%;
+  list-style: none;
+
+}
+
+
+body ul li img {
+object-fit: cover;
+max-height:300px;
+max-width:200px;
+
+}
+
+footer p {
+  position: fixed;
+  bottom: 0;
 }
