@@ -2,25 +2,78 @@ const _ = require('lodash');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const mongoDB= require('mongodb');
+// const mongoDB= require('mongodb').MongoClient;
+const mongoose = require('mongoose');
 require('dotenv').config()
 var assert = require('assert');
 
-const uri = process.env.DB_URI;
-var db = null
-let favBoeken;
 
-app.post('/profiel', (req, res) =>{
-  favBoeken.insertOne, ('Harry Potter')
-})
+// mongoose.connect(process.env.DB_URI, {useNewUrlParser: true, useUnifiedTopology: true});
+const connect = async (mongoose) => {
+  try {
+    await mongoose.connect(process.env.DB_URI,{useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true})
+  console.log('connected')
 
- mongoDB.MongoClient.connect(uri, function (err, client) {
-   db = client.db("test")
-   favBoeken = db.collection('favBoeken');
-   assert.equal(null, err);
-   client.close();
- });
+} catch (err){
+    console.log('failed')
+  }
+};
 
+
+
+// const Cat = mongoose.model('Cat', { name: String });
+//
+//
+//
+// const kitty = new Cat({ name: 'Zildjian' });
+// kitty.save().then(() => console.log('meow'));
+//
+//
+//
+//
+//
+// app.post('/profiel', (req, res) =>{
+//   favBoeken.insertOne, ('Harry Potter')
+// })
+
+ // mongoDB.MongoClient.connect(uri, function (err, client) {
+ //   db = client.db("test")
+ //   favBoeken = db.collection('favBoeken');
+ //   assert.equal(null, err);
+ //   client.close();
+ // });
+
+
+
+ // MongoClient.connect(uri, function(err, db) {
+ //   if (err) {
+ //     throw err;
+ //   }
+ //   db.collection('favBoeken').find().toArray(function(err, result) {
+ //     if (err) {
+ //       throw err;
+ //     }
+ //     console.log(result);
+ //   });
+ // });
+ //
+
+
+
+ //
+ // function boeken (req, res, next) {
+ //   db.collection('favBoeken').find().toArray(done)
+ //
+ //   function done(err, data) {
+ //     if (err) {
+ //       next (err)
+ //     } else {
+ //       res.send({data:data});
+ //       console.log({data:data});
+ //
+ //     }
+ //   }
+ // }
 
 const port = 3000;
 const path = require('path');
@@ -58,7 +111,6 @@ app.get("*", (req, res) => {
 app.post('/profiel', (req, res) =>{
 console.log(req.body);
 })
-
 
 
 

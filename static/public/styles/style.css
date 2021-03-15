@@ -4,8 +4,6 @@
   color: #FCF9EF;
 }
 
-
-
 h1 {
   font-family: 'Antic Didone', serif;
   font-weight: lighter;
@@ -85,14 +83,10 @@ nav ul li a:hover::before {
   transform: scaleX(1);
 }
 
-body {
-  margin-bottom: 100%;
-}
 
 
 body a.maakprofiel {
   color: #3A5743;
-
   padding: 1% 2% 1% 2%;
   margin: 30% 0 0 50%;
 
@@ -101,17 +95,21 @@ body a.maakprofiel {
 nav a {
   background-color: transparent;
 }
+div {
+  background-color: #3A5743;
+  align-self: center;
 
+}
 div.profielen {
-  padding: 0;
   background-color: #3A5743;
   display: flex;
   flex-direction: row;
-  overflow: scroll;
   list-style: none;
+  justify-content: center;
 }
 
 div.profielen ul {
+
     list-style: none;
 }
 
@@ -131,7 +129,14 @@ max-width:200px;
 
 }
 
+div.profielen ul {
+  max-width: 50%;
+  max-height:400px;
+  max-width:300px;
+}
+
+
 footer p {
-  position: fixed;
+  position: sticky;
   bottom: 0;
 }
