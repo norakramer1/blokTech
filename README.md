@@ -14,11 +14,13 @@ Voeg 3 van je favoriete boeken toe bij de Profiel pagina en krijg de profielen t
 ## Installeer app
 Clone dit project met: 
 `git clone https://github.com/norakramer1/blokTech.git`
+
 `git install`
 
 ### .env
 maak een 
 `.env`file met
+
 `DB_URI` = uri string van mongoDB database
 
 
@@ -28,10 +30,12 @@ maak een
 
 ### Maak een database
 `Database: MatchingApplicatie
+
  Collection: favbooks`
 
 ## Run app
 Typ `nodemon server.js` in de terminal om de app te starten
+
 De app is te zien op `http://localhost:3000/`
 
 ## Credits
