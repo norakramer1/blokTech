@@ -1,5 +1,10 @@
 
 <div class="profielen">
+  <% for(let [index,data] of datas.entries() || []){  %>
+   book1 : <%=book1%>
+   book2 : <%=book2%>
+   book3 : <%=book3%>
+  <%} %>
   <ul>
     <li>
       <img src="../static/public/images/profiel1.jpeg" alt="profiel1">
@@ -7,49 +12,12 @@
     <li>
       <h2>Naam</h2>
     </li>
-    <li>
-      <p>Favoriete Genres</p>
-    </li>
 
-  </ul>
-
-  <ul>
-    <li>
-      <img src="../static/public/images/profiel2.jpeg" alt="profiel2">
-    </li>
-    <li>
-      <h2>Naam</h2>
-    </li>
-    <li>
-      <p>Favoriete Genres</p>
-    </li>
-
-  </ul>
-
-  <ul>
-    <li>
-      <img src="../static/public/images/profiel3.jpeg" alt="profiel3">
-    </li>
-    <li>
-      <h2>Naam</h2>
-    </li>
-    <li>
-      <p>Favoriete Genres</p>
-    </li>
-
-  </ul>
-
-  <ul>
-    <li>
-      <img src="../static/public/images/profiel4.jpeg" alt="profiel4">
-    </li>
-    <li>
-      <h2>Naam</h2>
-    </li>
-    <li>
-      <p>Favoriete Genres</p>
-    </li>
+    <li><%= book1.favBook %></li>
+    <li><%= favBooks.book2 %></li>
+    <li><%= favBooks.book3 %></li>
 
   </ul>
 
 </div>
+ <%}%>

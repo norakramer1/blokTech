@@ -7,8 +7,8 @@
 h1 {
   font-family: 'Antic Didone', serif;
   font-weight: lighter;
-  font-size: 300%;
-  padding-left: 5%;
+  font-size: 500%;
+  text-align: center;
 }
 
 h2 {
@@ -21,32 +21,38 @@ h2 {
 
 p, a {
   font-family: sans-serif;
-  padding-left: 5%;
-  padding-right: 55%;
+  font-weight: lighter;
+   text-align: center;
   line-height: 150%;
-  font-size: 85%;
+  font-size: 100%;
+  letter-spacing: 1px;
 
 }
 
 
 nav {
-  border-bottom: 1px solid #FCF9EF;
+  border: 1px solid #FCF9EF;
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
 }
 
-nav ul {
-  font-family: sans-serif;
-  color: #FCF9EF;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
+nav a {
+transform: scale(0.3, 0.3);
+max-width: 80%;
 
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-top: 0px;
+   margin-bottom: 0px;
+}
+
 nav ul li {
-  padding: 2% 10% 0 0;
+   padding: 2% 8% 0 0;
+
 }
 
 nav ul li a {
@@ -54,13 +60,9 @@ nav ul li a {
   background-color: transparent;
   color: #FCF9EF;
   text-decoration: none;
+
 }
 
-nav a {
-transform: scale(0.3, 0.3);
-max-width: 80%;
-height: auto;
-}
 
 /* link underline effect */
 /* https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
@@ -68,8 +70,8 @@ height: auto;
 nav ul li a::before {
   content: "";
  position: absolute;
- width: 80%;
- height: 2px;
+ width: 100%;
+ height: 1px;
  bottom: 0;
  left: 0;
  background-color: #FCF9EF;
@@ -88,7 +90,7 @@ nav ul li a:hover::before {
 body a.maakprofiel {
   color: #3A5743;
   padding: 1% 2% 1% 2%;
-  margin: 30% 0 0 50%;
+  /* margin: 30% 0 0 50%; */
 
 }
 
@@ -133,6 +135,27 @@ div.profielen ul {
   max-width: 50%;
   max-height:400px;
   max-width:300px;
+}
+
+/* profiel */
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #FCF9EF;
+}
+
+input[type=text] {
+  max-width: 80%;
+  display: flex;
+    padding: 12px 20px;
+    border: none;
+    border-bottom: 2px solid #FCF9EF;
+}
+
+input label {
+  text-align: center;
 }
 
 
