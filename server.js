@@ -43,11 +43,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 //     res.render('matches', {findBook: findBook, name: req.body.name});
 //
 
-// app.get('/', async (req, res) => {
-//    const findBook = await favBook.find();
-//    res.render('partials/profielen', { findBook: favBook });
-//    console.log(findBook)
-//  });
 
 
 
