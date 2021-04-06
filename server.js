@@ -6,17 +6,22 @@ const app = express();
 const mongoose = require('mongoose');
 require('dotenv').config()
 const assert = require('assert');
-const favBook = require ('./models/boeken');
+const favBook = require('./models/boeken');
 
 const port = 3000;
 const path = require('path');
-app.use(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({
+  extended: true
+}));
 
 
-mongoose.connect(process.env.DB_URI, {useNewUrlParser: true, useUnifiedTopology: true})
-.then((result) => app.listen(3000))
-.then((result) => console.log('connected!'))
-.catch ((err) => console.log('error'));
+mongoose.connect(process.env.DB_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  })
+  .then((result) => app.listen(3000))
+  .then((result) => console.log('connected!'))
+  .catch((err) => console.log('error'));
 
 
 
@@ -29,7 +34,9 @@ app.use('/static', express.static(path.join(__dirname, 'static')));
 
 // bodyParser
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 // // finds matching account based on form input
 // app.post('/profiel', async (req, res) => {
@@ -55,24 +62,22 @@ app.post('/profiel', async (req, res) => {
 
   });
   const addBook = await new favBook({
-      book1: req.body.book1,
-      book2: req.body.book2,
-      book3: req.body.book3,
+    book1: req.body.book1,
+    book2: req.body.book2,
+    book3: req.body.book3,
 
-    });
-    addBook.save(function (err,newBook){
-      if (err) {
-        console.log(err)
-      } else {
-      res.render ('matches', {findBook: findBook})
+  });
+  addBook.save(function(err, newBook) {
+    if (err) {
+      console.log(err)
+    } else {
+      res.render('matches', {
+        findBook: findBook
+      })
 
     }
   });
-  });
-
-// res.render('matches', {
-//   findBook: findBook
-// });
+});
 
 
 // add books to database
@@ -100,7 +105,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/matches', (req, res) => {
- res.render('matches')
+  res.render('matches')
 
 });
 
@@ -111,9 +116,3 @@ app.get('/profiel', (req, res) => {
 app.get("*", (req, res) => {
   res.send('404 Not Found sorry!')
 });
-
-
-
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}!`)
-// });
