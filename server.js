@@ -1,4 +1,3 @@
-const _ = require('lodash');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -52,7 +51,7 @@ app.post('/profiel', async (req, res) => {
     book3: req.body.book3,
 
   });
-  addBook.save(function(err, newBook) {
+  addBook.save(function(err) {
     if (err) {
       console.log(err)
     } else {
