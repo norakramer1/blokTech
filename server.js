@@ -38,20 +38,6 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-// // finds matching account based on form input
-// app.post('/profiel', async (req, res) => {
-//     const findBook = await favBook.find({
-//       book1: req.body.book1,
-//       book2: req.body.book2,
-//       book3: req.body.book3,
-//
-//     });
-//
-//     res.render('matches', {findBook: findBook, name: req.body.name});
-//
-
-
-
 
 // finds matching account based on form input and adds account to db
 app.post('/profiel', async (req, res) => {
@@ -79,6 +65,18 @@ app.post('/profiel', async (req, res) => {
   });
 });
 
+
+// // finds matching account based on form input
+// app.post('/profiel', async (req, res) => {
+//     const findBook = await favBook.find({
+//       book1: req.body.book1,
+//       book2: req.body.book2,
+//       book3: req.body.book3,
+//
+//     });
+//
+//     res.render('matches', {findBook: findBook, name: req.body.name});
+//
 
 // add books to database
 // app.post('/profiel', async (req, res) => {

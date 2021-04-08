@@ -4,10 +4,12 @@
   "description": "blokTech 2021 matching applicatie",
   "main": "index.js",
   "scripts": {
+      "start": "node server.js",
     "test": "echo 'Hello World!'",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/norakramer1/blokTech.git"
