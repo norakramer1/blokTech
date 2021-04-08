@@ -1,9 +1,0 @@
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-
-h1 {
-  font-family: 'Antic Didone', serif;
-  font-size: 340%;
-}

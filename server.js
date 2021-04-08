@@ -2,7 +2,6 @@ const _ = require('lodash');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-// const mongoDB= require('mongodb').MongoClient;
 const mongoose = require('mongoose');
 require('dotenv').config()
 const assert = require('assert');
@@ -27,7 +26,7 @@ mongoose.connect(process.env.DB_URI, {
 
 // express and view engine //
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, './views'));
+// app.set('views', path.join(__dirname, './views'));
 
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
@@ -65,36 +64,6 @@ app.post('/profiel', async (req, res) => {
   });
 });
 
-
-// // finds matching account based on form input
-// app.post('/profiel', async (req, res) => {
-//     const findBook = await favBook.find({
-//       book1: req.body.book1,
-//       book2: req.body.book2,
-//       book3: req.body.book3,
-//
-//     });
-//
-//     res.render('matches', {findBook: findBook, name: req.body.name});
-//
-
-// add books to database
-// app.post('/profiel', async (req, res) => {
-//   const addBook = new favBook({
-//     book1: req.body.book1,
-//     book2: req.body.book2,
-//     book3: req.body.book3,
-//
-//   });
-//   addBook.save(function (err,newBook){
-//     if (err) {
-//       console.log(err)
-//     } else {
-//     res.render ('matches')
-//
-//   }
-// });
-// });
 
 
 // routes

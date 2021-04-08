@@ -1,25 +1,24 @@
-
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <meta charset="utf-8">
-        <title>example</title>
-        <link rel="stylesheet" href="./static/public/styles/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
-
-      </head>
+<%- include ("partials/head"); %>
       <body>
 
          <%- include ("partials/nav"); %>
 
       <h1>Matches</h1>
-      
+
+      <button type="button" name="filteren" class="verbergButton" >Verberg filters</button>
+
+<div class="filters">
+    <%= findBook[0].book1 %>
+    <%= findBook[0].book2 %>
+  <%= findBook[0].book3 %>
+</div>
+
       <div class="matches">
           <%- include ("partials/profielen"); %>
       </div>
 
     <%- include ("partials/footer"); %>
+  
 
       </body>
     </html>
