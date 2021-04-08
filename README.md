@@ -39,6 +39,18 @@ Type `nodemon server.js` in the terminal to start the app.
 
 You can view the app on `http://localhost:3000/`
 
+## Dependencies
+- body-parser
+- core-js
+- dotenv
+- ejs
+- express
+- mongodb
+- mongoose
+
+## DevDependencies
+- Nodemon
+
 ## Credits
 Nora Kramer 
 Blok Tech 
