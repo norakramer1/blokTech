@@ -20,9 +20,9 @@ Clone this project with:
 
 ### .env
 Make a  
-`.env`file with
-
-`DB_URI` = uri string van mongoDB database
+     `.env`file with
+      
+     `DB_URI` = uri string van mongoDB database
 
 
 ### Make a MongoDB account
