@@ -8,7 +8,7 @@ require('dotenv').config()
 const assert = require('assert');
 const favBook = require('./models/boeken');
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 const path = require('path');
 app.use(express.urlencoded({
   extended: true
@@ -19,7 +19,7 @@ mongoose.connect(process.env.DB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
-  .then((result) => app.listen(3000))
+  .then((result) => app.listen(port))
   .then((result) => console.log('connected!'))
   .catch((err) => console.log('error'));
 
