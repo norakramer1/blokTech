@@ -7,6 +7,9 @@ Next Read is an application that matches people who love the same books together
 ## Feature
 Add 3 of your favorite books on the homepage or the profile page and get filtered results from the database that match your search.
 
+![Home](https://github.com/norakramer1/blokTech/blob/main/static/public/images/home.png)
+![Matches](https://github.com/norakramer1/blokTech/blob/main/static/public/images/matches.png)
+
 
 ## Installation
 [NodeJS](https://nodejs.org/en/)
