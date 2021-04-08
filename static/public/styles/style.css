@@ -4,6 +4,7 @@
   color: #FCF9EF;
   padding: 0;
 }
+
 body {
   border: 1px solid #FCF9EF;
 }
@@ -39,7 +40,6 @@ p {
   letter-spacing: 1px;
 }
 
-
 ul {
   list-style: none;
 }
@@ -56,7 +56,6 @@ nav a {
   font-family: sans-serif;
   transform: scale(0.3, 0.3);
   max-width: 80%;
-
   background-color: transparent;
 }
 
@@ -111,7 +110,7 @@ section a {
 }
 
 section {
-    border-bottom: 1px solid #FCF9EF;
+  border-bottom: 1px solid #FCF9EF;
 }
 
 section p {
@@ -123,13 +122,13 @@ ul.filters li {
   display: flex;
   flex-direction: row;
 }
+
 div.profielen {
   list-style: none;
   max-width: 25%;
   margin-right: 5%;
   display: flex;
 }
-
 
 div.profielen ul li {
   font-family: sans-serif;
@@ -149,30 +148,29 @@ div.matches {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 /*filters*/
 div.filters {
   display: contents;
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
-
   font-family: sans-serif;
   font-weight: lighter;
 }
 
-div.filters.close  {
+div.filters.close {
   display: none;
   overflow: scroll;
 }
 
-
 button.verbergButton {
-display: flex;
-justify-content: center;
-margin-left: 44%;
-margin-bottom: 1%;
+  display: flex;
+  justify-content: center;
+  margin-left: 44%;
+  margin-bottom: 1%;
   background-color: #FCF9EF;
-color: #3A5743;
+  color: #3A5743;
   border-style: none;
   padding: 1% 3% 1% 3%;
 }
@@ -188,14 +186,6 @@ form {
   border: 1px solid #FCF9EF;
 }
 
-form.boeken label {
-  margin-top: 5%;
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: lighter;
-  text-align: center;
-}
-
 form.boeken button {
   padding: 4%;
   border-style: none;
@@ -207,6 +197,7 @@ form.boeken button {
 input[type=text] {
   font-family: sans-serif;
   font-weight: lighter;
+  margin-top: 5%;
   opacity: 80%;
   display: flex;
   padding: 12px 20px;
