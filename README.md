@@ -1,42 +1,59 @@
 # blokTech
-Repo voor Project Tech, Frontend 2 en Backend 
+Repo for Project Tech, Frontend 2 and Backend 
 
-## Matching Applicatie concept/ introductie
-NextRead is een applicatie die mensen die van dezelfde soort boeken houden aan elkaar matcht. In de app kun je gematcht worden aan mensen die van hetzelfde genre boeken houden of je kunt gematcht worden aan mensen die van een genre houden wat je nog niet zo goed kent.
+## Matching Application concept/ introduction
+Next Read is an application that matches people who love the same books together. Simply fill out a form with your favorite books and get matches based on your favorite books.
 
 ## Feature
-Voeg 3 van je favoriete boeken toe bij de Profiel pagina en krijg de profielen te zien van mensen die dezelfde boeken hebben ingevoerd.
+Add 3 of your favorite books on the homepage or the profile page and get filtered results from the database that match your search.
 
-## Installatie
+![Home](https://github.com/norakramer1/blokTech/blob/main/static/public/images/home.png)
+![Matches](https://github.com/norakramer1/blokTech/blob/main/static/public/images/matches.png)
+
+
+## Installation
 [NodeJS](https://nodejs.org/en/)
+
 [Git](https://git-scm.com/)
 
-## Installeer app
-Clone dit project met: 
+## Install app
+Clone this project with: 
 `git clone https://github.com/norakramer1/blokTech.git`
 
 `git install`
 
 ### .env
-maak een 
-`.env`file met
+Make a  
+     `.env`file with
+      
+     `DB_URI` = uri string van mongoDB database
 
-`DB_URI` = uri string van mongoDB database
 
-
-### Maak een MongoDB account
+### Make a MongoDB account
 
 [MongoDB](https://www.mongodb.com/)
 
-### Maak een database
+### Make a database
 `Database: MatchingApplicatie
 
  Collection: favbooks`
 
 ## Run app
-Typ `nodemon server.js` in de terminal om de app te starten
+Type `nodemon server.js` in the terminal to start the app.
 
-De app is te zien op `http://localhost:3000/`
+You can view the app on `http://localhost:3000/`
+
+## Dependencies
+- body-parser
+- core-js
+- dotenv
+- ejs
+- express
+- mongodb
+- mongoose
+
+## DevDependencies
+- Nodemon
 
 ## Credits
 Nora Kramer 
